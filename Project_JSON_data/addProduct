@@ -1,0 +1,7 @@
+{
+	"id":1,
+	"productName":"Pizza",
+	"description":"Very delicious",
+	"price": 12.5,
+	"productType":"BREAKFAST"
+}

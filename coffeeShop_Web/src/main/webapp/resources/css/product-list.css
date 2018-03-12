@@ -1,0 +1,52 @@
+body {
+    padding-top: 70px;
+    margin: 0; font-family : 'Ubuntu', Tahoma, sans-serif; font-size : 13px;
+    line-height : 18px;
+    color: #333333;
+    font-family: 'Ubuntu', Tahoma, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    background-color: whitesmoke !important;
+}
+
+@media ( min-width : 992px) {
+    body {
+        padding-top: 75px;
+    }
+}
+
+.cover {
+    width: 900px;
+    height: 350px;
+}
+
+.product-image {
+    width: 30px;
+    height: 30px;
+}
+
+.card-header {
+    color: #555 !important;
+    text-transform: uppercase;
+    font-size: 11px !important;
+    line-height: 1.465 !important;
+    font-family: "Arial,sans-serif";
+}
+
+.filter-header {
+    font-weight: bold;
+    font-size: 20px !important;
+    color: #4e555b;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-block {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}

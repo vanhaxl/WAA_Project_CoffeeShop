@@ -1,0 +1,15 @@
+{
+	"id": 1,
+	"firstName": "Van Ha",
+	"lastName": "Nguyen",
+	"email": "vhnguyen@mum.edu",
+	"address": {
+		"id": 1,
+		"city": "Faifield",
+		"state": "Iowa",
+		"country": "USA",
+		"zipcode": "52557"
+	},
+	"phone": "6417828399",
+	"enable": true
+}
