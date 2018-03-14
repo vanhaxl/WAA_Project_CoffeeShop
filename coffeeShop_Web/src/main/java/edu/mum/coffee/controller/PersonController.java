@@ -111,8 +111,8 @@ public class PersonController {
         return "redirect:/persons";
     }
 
-    @GetMapping(value = "/updateProfile/{email}")
-    public String getUpdateProfileForm(@PathVariable String email, Model model) {
+    @GetMapping(value = "/updateProfile")
+    public String getUpdateProfileForm(@RequestParam String email, Model model) {
         Person person = personService.findByEmail(email);
 
         PersonDTO personDTO = new PersonDTO();
@@ -132,8 +132,8 @@ public class PersonController {
         return "updatePerson";
     }
 
-    @RequestMapping(value = "/updateProfile/{email}", method = RequestMethod.POST)
-    public String updateProfile(@PathVariable String email, @ModelAttribute("personDTO") @Valid PersonDTO personDTO, BindingResult result) {
+    @RequestMapping(value = "/updateProfile", method = RequestMethod.POST)
+    public String updateProfile(@RequestParam String email, @ModelAttribute("personDTO") @Valid PersonDTO personDTO, BindingResult result) {
         Preconditions.checkNotNull(personDTO);
         Person updatedPerson = personService.findByEmail(email);
         Address updatedAddress = updatedPerson.getAddress();

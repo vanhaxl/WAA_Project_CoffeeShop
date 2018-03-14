@@ -45,7 +45,7 @@
 
                 <sec:authorize access="hasRole('ROLE_USER')">
                     <li class="nav-item myaccount" id="liMyAccount">
-                        <a class="nav-link" href="/persons/updateProfile/${user.username}">My Profile</a>
+                        <a class="nav-link" href="/persons/updateProfile?email=${user.username}">My Profile</a>
                     </li>
                 </sec:authorize>
 

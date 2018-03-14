@@ -21,7 +21,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/login", "/logout", "/products", "/resources/**"
                             , "/img/**", "/"
-                            ,"/js/**").permitAll()
+                            ,"/js/**","/persons/signup").permitAll()
                 .anyRequest().authenticated();
 		http.formLogin().loginPage("/login").permitAll().defaultSuccessUrl("/").failureUrl("/login?error");
         http.logout()
